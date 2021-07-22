@@ -1,0 +1,56 @@
+{
+    "runbook": "AzurePowerManager",
+    "version": "1.0.0-beta1",
+    "author": "JDMSFT",
+    "created": "20/03/21",
+    "updated": "22/07/21",
+    "modules": [
+        {
+            "name": "Az.Accounts",
+            "version": "2.2.6",
+            "requiredBy": [
+                "AzurePowerManager",
+                "Az.Automation",
+                "Az.ResourceGraph",
+                "Az.PowerManager",
+                "Az.LogAnalytics"
+            ]
+        },
+        {
+            "name": "Az.Automation",
+            "version": "1.5.0",
+            "requiredBy": [
+                "AzurePowerManager"
+            ]
+        },
+        {
+            "name": "Az.ResourceGraph",
+            "version": "0.8.0",
+            "requiredBy": [
+                "Az.PowerManager"
+            ]
+        },
+        {
+            "name": "Az.PowerManager",
+            "version": "1.0.0-beta",
+            "requiredBy": [
+                "AzurePowerManager"
+            ]
+        },
+        {
+            "name": "Az.LogAnalytics",
+            "version": "1.0.1",
+            "requiredBy": [
+                "AzurePowerManager"
+            ]
+        },
+        {
+            "name": "PSRequiredModules",
+            "version": "2.1.0",
+            "requiredBy": [
+                "Az.PowerManager",
+                "Az.LogAnalytics"
+            ]
+        }
+    ]
+}
